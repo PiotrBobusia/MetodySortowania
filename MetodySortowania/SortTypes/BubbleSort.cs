@@ -14,11 +14,16 @@ namespace MetodySortowania.SortTypes
         {
             for(int i = 0; i < myArray.Length-1; i++)
             {
+                bool isDone = true;
                 for(int j = 0; j < myArray.Length-1; j++)
                 {
-                    if (myArray[j].CompareTo(myArray[j + 1]) > 0) 
-                        (myArray[j], myArray[j + 1]) = (myArray[j+1], myArray[j]);
+                    if (myArray[j].CompareTo(myArray[j + 1]) > 0)
+                    {
+                        (myArray[j], myArray[j + 1]) = (myArray[j + 1], myArray[j]);
+                        isDone = false;
+                    }
                 }
+                if (isDone) break;
             }
 
             return myArray;

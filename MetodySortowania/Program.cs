@@ -15,7 +15,7 @@ test(new HeapSort());
 
 void test (ISort SortingMethod)
 {
-    var array = new int[] { 4, 5, 1, 0, 65, 3, -4, 9, 5, -8, 5, 0 };
+    var array = new int[] { 4, 5, 1, 0, 65, 3, -4, 9, 5, -8, 5, 0 , 7, 8, 9, 11, 12, 14 };
     SortingMethod.Sort<int>(array);
 
     foreach (var item in array)
