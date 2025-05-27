@@ -10,7 +10,7 @@ namespace MetodySortowania.SortTypes
 {
     public class HeapSort : ISort
     {
-        public T[] Sort<T>(T[] myArray) where T : IComparable
+        public T[] Sort<T>(T[] myArray) where T : IComparable<T>
         {
             for(int x = myArray.Length/2; x >= 0; x--)
             {
@@ -27,7 +27,7 @@ namespace MetodySortowania.SortTypes
             return myArray;
         }
 
-        private void Heapify<T>(T[] array, int size, int index) where T : IComparable
+        private void Heapify<T>(T[] array, int size, int index) where T : IComparable<T>
         {
             int maxIndex = index;
             int leftChild = index * 2 + 1;

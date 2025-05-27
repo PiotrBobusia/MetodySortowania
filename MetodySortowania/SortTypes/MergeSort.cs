@@ -10,7 +10,7 @@ namespace MetodySortowania.SortTypes
     public class MergeSort : ISort
     {
 
-        public T[] Sort<T>(T[] myArray) where T : IComparable
+        public T[] Sort<T>(T[] myArray) where T : IComparable<T>
         {
             if (myArray.Length <= 1) return myArray;
 

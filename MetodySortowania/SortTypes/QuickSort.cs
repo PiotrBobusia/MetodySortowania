@@ -9,12 +9,12 @@ namespace MetodySortowania.SortTypes
 {
     public class QuickSort : ISort
     {
-        public T[] Sort<T>(T[] myArray) where T : IComparable
+        public T[] Sort<T>(T[] myArray) where T : IComparable<T>
         {
             return PartialSort(myArray, 0, myArray.Length - 1);
         }
 
-        private T[] PartialSort<T>(T[] myArray, int startIndex, int endIndex) where T : IComparable
+        private T[] PartialSort<T>(T[] myArray, int startIndex, int endIndex) where T : IComparable<T>
         {
             if (startIndex >= endIndex) return myArray;
 

@@ -10,7 +10,7 @@ namespace MetodySortowania.SortTypes
     public class BubbleSort : ISort
     {
 
-        public T[] Sort<T>(T[] myArray) where T : IComparable
+        public T[] Sort<T>(T[] myArray) where T : IComparable<T>
         {
             for(int i = 0; i < myArray.Length-1; i++)
             {

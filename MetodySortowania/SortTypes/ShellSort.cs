@@ -9,7 +9,7 @@ namespace MetodySortowania.SortTypes
 {
     public class ShellSort : ISort
     {
-        public T[] Sort<T>(T[] myArray) where T : IComparable
+        public T[] Sort<T>(T[] myArray) where T : IComparable<T>
         {
 
             for(int h = myArray.Length/2; h > 0; h /= 2)

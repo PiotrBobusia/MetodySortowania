@@ -9,7 +9,7 @@ namespace MetodySortowania.SortTypes
 {
     public class InsertionSort : ISort
     {
-        public T[] Sort<T>(T[] myArray) where T : IComparable
+        public T[] Sort<T>(T[] myArray) where T : IComparable<T>
         {
             int border = 1;
 

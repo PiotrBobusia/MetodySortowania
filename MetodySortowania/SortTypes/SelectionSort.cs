@@ -9,7 +9,7 @@ namespace MetodySortowania.SortTypes
 {
     public class SelectionSort : ISort
     {
-        public T[] Sort<T>(T[] myArray) where T : IComparable
+        public T[] Sort<T>(T[] myArray) where T : IComparable<T>
         {
 
             for (int border = 0; border < myArray.Length - 1; border++)

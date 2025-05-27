@@ -2,6 +2,6 @@
 {
     public interface ISort
     {
-        abstract T[] Sort<T>(T[] myArray) where T : IComparable;
+        abstract T[] Sort<T>(T[] myArray) where T : IComparable<T>;
     }
 }
